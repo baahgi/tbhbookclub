@@ -1,0 +1,129 @@
+.btn-brown{
+    @apply px-2 py-1 text-white rounded-sm rounded bg-brown-1;
+}
+.btn-brown:hover{
+    @apply bg-brown-2;
+}
+.btn-brown:focus{
+    @apply outline-none;
+}
+
+.btn-teal{
+    @apply px-2 py-1 text-teal-100 whitespace-no-wrap bg-teal-600 rounded-sm;
+}
+.btn-teal:hover{
+    @apply bg-teal-700;
+}
+.btn-teal:focus{
+    @apply outline-none;
+}
+
+.btn-red{
+    @apply px-2 py-1 text-red-100 whitespace-no-wrap bg-red-600 rounded-sm;
+}
+.btn-red:hover{
+    @apply bg-red-700;
+}
+.btn-red:focus{
+    @apply outline-none;
+}
+
+.active{
+    @apply py-1 font-semibold rounded-sm bg-gray-2;
+}
+
+@media(max-width: 639px){
+    .course-card{
+        min-width: 60%;
+    }
+}
+
+@media(min-width:640px) and (max-width: 1023px){
+    .course-card{
+        min-width: 45%;
+    }
+}
+
+.custom-form-input{
+    @apply w-full px-2 py-2 tracking-wider border rounded bg-gray-1 border-brown-1;
+}
+.custom-form-input::placeholder{
+    @apply text-gray-700;
+}
+
+.custom-form-input:focus{
+    @apply bg-white outline-none;
+}
+
+.custom-form-label{
+    @apply block mb-2 text-sm font-bold text-gray-700;
+}
+.custom-form-errormsg{
+    @apply mt-3 text-xs italic text-red-500;
+}
+
+
+/*
+    ----------------
+    Custom radio box
+    ---------------
+*/
+.custom-radio{
+    @apply relative inline-block pl-10 align-middle cursor-pointer select-none;
+}
+.custom-radio input[type="radio"]{
+    @apply hidden;
+}
+
+.custom-radio span{
+    @apply absolute top-0 left-0 inline-block w-6 h-6 border-8 rounded-full border-gray-1;
+}
+.custom-radio span::after{
+    content: "";
+    @apply absolute inline-block w-2 h-2 rounded-full bg-brown-2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 300ms ease-in-out 0.1s;
+}
+.custom-radio input[type="radio"]:checked ~ span::after{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/*
+    ------------------
+    Checkbox component
+    ------------------
+*/
+.custom-checkbox{
+    @apply relative inline-block pl-12 mx-6 align-middle cursor-pointer select-none;
+}
+
+.custom-checkbox input[type="checkbox"]{
+    @apply absolute hidden;
+}
+
+.custom-checkbox span{
+    @apply absolute top-0 left-0 inline-block w-6 h-6 rounded-sm bg-gray-1;
+}
+
+.custom-checkbox:hover input[type="checkbox"] ~ span{
+    @apply bg-brown-2;
+}
+
+
+
+.custom-checkbox span:after{
+    content: "";
+    @apply absolute hidden;
+}
+.custom-checkbox input[type="checkbox"]:checked ~ span:after{
+    @apply block;
+}
+.custom-checkbox span:after{
+    @apply w-3 h-4 border-b-4 border-r-4 border-brown-2;
+    left: 6px;
+    top: 2px;
+    transform: rotate(45deg);
+}

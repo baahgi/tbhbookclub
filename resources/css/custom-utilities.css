@@ -1,0 +1,11 @@
+.font-tahoma{
+    font-family: Tahoma, sans-serif;
+}
+
+.custom-shadow-outline:focus {
+    box-shadow: 0 0 0 1px rgba(125, 108, 98, 0.3);
+}
+
+.h-128{
+    height: 30rem;
+}
