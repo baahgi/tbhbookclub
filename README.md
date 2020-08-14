@@ -1,4 +1,4 @@
-##TBHBookClub
+## TBHBookClub
 
-By: #Directyle
+By: ### Directyl
 baahgi80@gmail.com
