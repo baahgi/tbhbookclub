@@ -11,6 +11,7 @@
     },
     "devDependencies": {
         "@tailwindcss/custom-forms": "^0.2",
+        "alpinejs": "^2.5.0",
         "axios": "^0.19",
         "cross-env": "^7.0",
         "jquery": "^3.5.1",
@@ -22,8 +23,8 @@
         "sass": "^1.15.2",
         "sass-loader": "^8.0.0",
         "tailwindcss": "^1.4",
+        "video.js": "^7.8.4",
         "vue": "^2.6.11",
-        "vue-template-compiler": "^2.6.11",
-        "alpinejs": "^2.5.0"
+        "vue-template-compiler": "^2.6.11"
     }
 }

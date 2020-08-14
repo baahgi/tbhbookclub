@@ -7,6 +7,8 @@ require('./bootstrap/carousel');
 
 require('alpinejs');
 
+window.videojs = require('video.js');
+
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 

@@ -8,10 +8,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'TheBookClub') }} {{ ' | ' }}@yield('title')</title>
+    {{-- <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" /> --}}
 
 
     <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @stack('custom-css')
 </head>
 <body class="h-screen antialiased text-gray-900 font-tahoma bg-brown-1">

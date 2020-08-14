@@ -4,7 +4,16 @@
     <div class="mt-8">
 
         <div class="flex items-center justify-center mt-8">
-            <video controls  preload="auto" class="sm:max-w-2xl md:max-w-4xl lg:max-w-5xl">
+            <video
+                id="my-player"
+                controls
+                preload="auto"
+                autoplay
+                width="896"
+
+                class="sm:max-w-2xl md:max-w-4xl lg:max-w-5xl video-js"
+                data-setup="{}"
+                >
                 <source src="{{ asset($course->videos->first()->value('url')) }}" type="video/mp4">
             </video>
         </div>
@@ -27,9 +36,9 @@
                 </div>
                 <div class="flex-1 overflow-hidden">
                     <div class="flex items-center space-x-5">
-                        <p class="font-semibold text-brown-2">
+                        <p class="font-semibold text-brown-2 hover:text-brown-1">
                             <a href="{{ route('courses.episode', ['course'=>$course,'video'=>$intro_video]) }}"
-                                class="truncate">{{ $intro_video->title }}
+                                class="text-sm truncate">{{ $intro_video->title }}
                             </a>
                         </p>
                     </div>
@@ -62,9 +71,9 @@
                     </div>
                     <div class="flex-1 overflow-hidden">
                         <div class="flex items-center space-x-5">
-                            <p class="font-semibold text-brown-2">
+                            <p class="font-semibold text-brown-2 hover:text-brown-1">
                                 <a href="{{ route('courses.episode', ['course'=>$course,'video'=>$video]) }}"
-                                    class="truncate">{{ $video->title }}
+                                    class="text-sm truncate ">{{ $video->title }}
                                 </a>
                             </p>
                         </div>
@@ -143,3 +152,10 @@
 
     </div>
 @endsection
+
+
+@push('custom-script')
+    <script>
+        videojs('my-player');
+    </script>
+@endpush

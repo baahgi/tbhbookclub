@@ -4,15 +4,23 @@
     <div class="mt-8">
 
         <div class="p-6 rounded bg-gray-1">
-            <h3 class="mt-2">
+            <h3 class="mt-2 leading-6">
                 {{ $course->title }}
             </h3>
-            <p class="text-gray-700">{{ $course->tutor->firstname }} {{ $course->tutor->lastname }}</p>
+            <p class="mt-2 text-gray-700">{{ $course->tutor->firstname }} {{ $course->tutor->lastname }}</p>
         </div>
 
-        <div class="mt-8 lg:justify-betwee lg:flex">
-            <div class="">
-                <video controls  preload="auto" class=" lg:max-w-4xl">
+        <div class="mt-8 lg:justify-between lg:flex">
+            <div class="flex items-center justify-center ">
+                <video
+                    id="my-player"
+                    controls
+                    preload="auto"
+                    width="896"
+                    autoplay
+                    class="max-w-sm sm:max-w-2xl md:max-w-4xl lg:max-w-5xl video-js"
+                    data-setup="{}"
+                    >
                     @if ($intro_video)
                         <source src="{{ asset($intro_video->url) }}" type="video/mp4">
                     @endif
@@ -27,7 +35,7 @@
                             @if ($intro_video)
                             <div class="flex w-full p-1 space-x-3 rounded bg-gray-1">
                                 <div class="">
-                                    <a href="{{ route('courses.episode', ['course'=>$course,'video'=>$intro_video]) }}">
+                                    <a href="">
                                         <svg class="w-6 h-6 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
                                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
                                         </svg>
@@ -40,20 +48,20 @@
                                 </div>
                                 <div class="flex-1 overflow-hidden">
                                     <p class="font-semibold text-brown-2">
-                                        <a href="{{ route('courses.episode', ['course'=>$course,'video'=>$intro_video]) }}"
+                                        <a href=""
                                             class="text-xs break-words">{{ $intro_video->title }}
                                         </a>
                                     </p>
                                 </div>
                                 <div class="flex items-start justify-end space-x-4 select-none">
-                                    <span class="px-1 text-xs text-white border rounded-md border-brown-2 text-brown-2">intro</span>
+                                    <span class="px-1 text-xs border rounded-md border-brown-2 text-brown-2">intro</span>
                                 </div>
                             </div>
                             @endif
 
                             @foreach($videos as $video)
                             <div class="flex w-full p-1 space-x-3 rounded bg-gray-1">
-                                <div class="">
+                              <div class="">   {{-- showing the icon --}}
                                     @if (subscribedTo($course) )
                                         <a href="{{ route('courses.episode', ['course'=>$course,'video'=>$video]) }}">
                                             <svg class="w-6 h-6 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
@@ -72,13 +80,18 @@
                                 </div>
                                 <div class="flex-1 overflow-hidden">
                                     <p class="font-semibold text-brown-2">
+                                        @if (subscribedTo($course) )
                                         <a href="{{ route('courses.episode', ['course'=>$course,'video'=>$video]) }}"
-                                            class="text-xs break-words">{{ $video->title }}
+                                            class="text-xs break-words">
+                                            {{ $video->title }}
                                         </a>
+                                        @else
+                                        <span class="text-xs break-words"> {{ $video->title }} </span>
+                                        @endif
                                     </p>
                                 </div>
                                 <div class="flex items-start justify-end space-x-4 select-none">
-                                    <span class="px-1 text-xs text-white border rounded-md border-brown-2 text-brown-2">{{ $video->episode }}</span>
+                                    <span class="px-1 text-xs border rounded-md border-brown-2 text-brown-2">{{ $video->episode }}</span>
                                 </div>
                             </div>
                             @endforeach
@@ -137,7 +150,7 @@
                                 @if ($intro_video)
                                 <div class="flex w-full p-1 space-x-3 rounded bg-gray-1">
                                     <div class="">
-                                        <a href="{{ route('courses.episode', ['course'=>$course,'video'=>$intro_video]) }}">
+                                        <a href="">
                                             <svg class="w-6 h-6 text-gray-900" viewBox="0 0 20 20" fill="currentColor">
                                                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"/>
                                             </svg>
@@ -150,15 +163,15 @@
                                     </div>
                                     <div class="flex-1 overflow-hidden">
                                         <p class="font-semibold text-brown-2">
-                                            <a href="{{ route('courses.episode', ['course'=>$course,'video'=>$intro_video]) }}"
+                                            <a href=""
                                                 class="text-xs">{{ $intro_video->title }}
                                             </a>
                                         </p>
                                     </div>
                                     <div class="flex items-start justify-end space-x-4 select-none">
-                                        <span class="px-1 text-xs text-white border rounded-md border-brown-2 text-brown-2">{{ 'intro' }}</span>
+                                        <span class="px-1 text-xs border rounded-md border-brown-2 text-brown-2">{{ 'intro' }}</span>
                                     </div>
-                                </div>
+                                </div> {{-- End of intro video --}}
                                 @endif
                                 @foreach($videos as $video)
                                 <div class="flex w-full p-1 space-x-3 rounded bg-gray-1">
@@ -181,13 +194,17 @@
                                     </div>
                                     <div class="flex-1 overflow-hidden">
                                         <p class="font-semibold text-brown-2">
+                                            @if (subscribedTo($course))
                                             <a href="{{ route('courses.episode', ['course'=>$course,'video'=>$video]) }}"
                                                 class="text-xs">{{ $video->title }}
                                             </a>
+                                            @else
+                                            <span class="text-xs break-words"> {{ $video->title }} </span>
+                                            @endif
                                         </p>
                                     </div>
                                     <div class="flex items-start justify-end space-x-4 select-none">
-                                        <span class="px-1 text-xs text-white border rounded-md border-brown-2 text-brown-2">{{ $video->episode }}</span>
+                                        <span class="px-1 text-xs border rounded-md border-brown-2 text-brown-2">{{ $video->episode }}</span>
                                     </div>
                                 </div>
                                 @endforeach
@@ -233,7 +250,7 @@
             <div class="w-full p-2 mt-6 rounded bg-gray-1 md:max-w-3xl">
                 <h4>Subscription</h4>
                 <p class="mt-4">
-                    You hve not subscribed to this course.
+                    You have not subscribed to this course.
                     @guest
                         <a href='#' class="px-2 py-1 text-white whitespace-no-wrap bg-teal-600 rounded hover:bg-teal-500">Sign Up</a>
                     @endguest
@@ -245,3 +262,10 @@
 
     </div>
 @endsection
+
+
+@push('custom-script')
+    <script>
+        videojs('my-player');
+    </script>
+@endpush

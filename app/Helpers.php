@@ -20,12 +20,5 @@ function subscribedTo($course){
     return false;
 }
 
-//check to see if the video is an into_video
-function isIntroVideo($video){
-    if($video->intro_video == true){
-        return  true;
-    }else{
-        return false;
-    }
-}
+
 
