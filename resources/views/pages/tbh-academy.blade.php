@@ -8,7 +8,7 @@
         We offer courses designed to train the youth in their personal growth development, help
         them discover their potentials, learn new and develop latent skills, renew their minds through
         relevant reading and mentoring, and prepare them for the future and career. The program is targeted
-        at people between the ages of 12 to 25 years, with much focus on Junior and Senior High School graduates
+        at people between the ages of 12 to 45 years, with much focus on Junior and Senior High School graduates
         awaiting their results into tertiary education.
     </p>
     <p class="mt-2 leading-relaxed text-gray-800">

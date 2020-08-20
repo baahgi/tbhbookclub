@@ -227,8 +227,9 @@
                             </div>
                         </div>
                         <div class="p-6 mt-6 text-center bg-white rounded md:mt-0 lg:w-3/5">
-                            <h5 class="font-medium capitalize">{{ $course->title }}</h5>
+                            <h5 class="font-medium capitalize">About the Course</h5>
                             <div class="mt-4 text-sm text-left text-gray-700">
+                                <p class="mb-3 text-lg">{{ $course->title }}</p>
                                 {{ $course->description }}
                             </div>
                         </div>
@@ -248,9 +249,8 @@
 
         <div class="flex items-center justify-center">
             <div class="w-full p-2 mt-6 rounded bg-gray-1 md:max-w-3xl">
-                <h4>Subscription</h4>
                 <p class="mt-4">
-                    You have not subscribed to this course.
+                    You haven't registered for this course
                     @guest
                         <a href='#' class="px-2 py-1 text-white whitespace-no-wrap bg-teal-600 rounded hover:bg-teal-500">Sign Up</a>
                     @endguest

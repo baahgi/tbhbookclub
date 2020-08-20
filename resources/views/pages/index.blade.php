@@ -17,7 +17,7 @@
                         <img src="images/BH WEB BANNER.jpg" class="block w-full" alt="Image">
                         <div class="carousel-caption bg-gray-1">
                             <h2 class="text-sm md:text-base lg:text-lg text-brown-3">We are raising the next generation of change makers</h2>
-                            <button type="submit" class="mt-2 text-sm font-medium btn-teal ">Join Us</button>
+                            <a href="{{ route('member.register') }}" role="button" class="mt-2 text-sm font-medium btn-teal ">Join Us</a>
                         </div>
                     </div>
                     <div class="w-full carousel-item">
@@ -48,7 +48,7 @@
             <h3 class="text-center">You are Welcome</h3>
             <p class="px-6 my-4 leading-relaxed tracking-wide text-gray-800">
                 We believe no matter how many times our leaders fail us, the change Africa desires is still with the
-                people. We are on a mission to raise a generation of visionary leaders, problem solvers and better role models for Africa,
+                people. We are on a mission to raise a generation of visionary leaders, problem solvers, and better role models for Africa,
                 by renewing our mindset and developing potentials and skills through selective reading, knowledge sharing,
                 and intentional mentoring of the youth. At TBH Book Club, we read books, get trained in personal growth,
                 and are mentored by experts. Welcome to our world, we are glad to have you here, join and
@@ -85,10 +85,9 @@
                     Register for our personal growth development courses.
                 </p>
                 <div class="flex justify-center ">
-                    <button type="button"
-                    class="btn-brown lg:px-6">
+                    <a href="{{ route('pages.tbhacademy') }}" role="button" class="btn-brown lg:px-6">
                         Register
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -106,10 +105,10 @@
                     Support our Course for a Better Africa
                 </p>
                 <div class="flex justify-center mt-1">
-                    <button type="button"
+                    <a href="{{ route('pages.partner') }}" role="button"
                     class="px-6 py-1 mt-2 btn-brown">
                         Partner with Us
-                    </button>
+                </a>
                 </div>
             </div>
         </div>

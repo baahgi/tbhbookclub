@@ -6,8 +6,7 @@
 <div class="p-6 mt-8 rounded-lg shadow-lg bg-gray-1">
     <h2 class="">Contact Us</h2> <hr class="border-brown-1">
     <p class="mt-4 leading-relaxed text-gray-800">
-        Contact us on <span class="text-teal-600">tbhclubgh@gmail.com</span> or
-        call <span class="text-teal-600">0503186763</span>
+      We would love to hear from you
     </p>
 </div>
 

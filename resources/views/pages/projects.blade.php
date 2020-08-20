@@ -7,8 +7,11 @@
     <p class="mt-4 leading-relaxed text-gray-800">
         In our quest to raise problem solvers and effective leaders for Africa through selective
         reading and mentoring, we want to bring knowledge sharing and mentoring closer to the youth,
-        hence we are building Reading & Mentoring Centres in every district in Ghana. And to contribute
+        hence we are building Reading and Mentoring Centres in every district in Ghana and across Africa. And to contribute
         to the vision of making Ghana the cleanest city in Africa, we are using plastic waste for our buildings.
+        <p class="mt-4">
+            <a class="hover:bg-teal-700 btn-teal" href="{{ route('pages.partner') }}">Partner with Us</a>
+        </p>
     </p>
 </div>
 

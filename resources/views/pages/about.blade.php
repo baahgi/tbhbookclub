@@ -73,7 +73,7 @@
                 <li>Discussing</li>
                 <li>Speaking</li>
                 <li>Training and</li>
-                <li>Mentoring, We are able to shape the mindset of the youth nd impact their lives</li>
+                <li>Mentoring, we are able to shape the mindset of the youth and impact their lives</li>
             </ul>
     </div>
 

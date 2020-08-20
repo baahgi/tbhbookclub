@@ -5,7 +5,7 @@
             <a href="{{ route('programs.index') }}">All</a>
         </span>
         @foreach ($programs as $program)
-            <span class="px-1 py-1 mt-2 text-sm capitalize border rounded-lg shadow lg:text-xs border-gray-2 text-gray-1 hover:text-teal-100">
+            <span class="px-1 py-1 mt-2 text-xs capitalize border rounded-lg shadow border-gray-2 text-gray-1 hover:text-teal-100">
                 <a href="{{ route('programs.show', $program) }}">{{ $program->title }}</a>
             </span>
         @endforeach
