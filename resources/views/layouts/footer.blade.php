@@ -21,19 +21,22 @@
     </div>
 
     <div class="mt-40 text-gray-1">
-        <h6 class="text-lg tracking-widest text-center text-white underline"><span class="p-1 rounded-sm shadow">Partners</span></h6>
+        <h6 class="text-lg tracking-widest text-center text-white underline"><span class="p-1 rounded-sm shadow">Our Partners</span></h6>
         <div class="flex flex-col items-center justify-center mt-4 space-y-8 lg:space-x-8 lg:space-y-0 lg:flex-row">
             <span class="flex space-x-8">
-                <img src="{{ asset('images/partners/bookhaven.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
+                <img title="TheBookhaven.com" src="{{ asset('images/partners/bookhaven.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
                 <img src="{{ asset('images/partners/firefox.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
             </span>
             <span class="flex space-x-8">
-                <img src="{{ asset('images/partners/nancynyarko.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
-                <img src="{{ asset('images/partners/agyapaboabeng.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
+                <img title="Nancynyarko.com" src="{{ asset('images/partners/nancynyarko.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
+                <img title="agyapa boabeng" src="{{ asset('images/partners/agyapaboabeng.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
             </span>
             <span class="flex space-x-8">
-                <img src="{{ asset('images/partners/tbhbookclub.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
-                <img src="{{ asset('images/partners/idealhub.jpg') }}" class="w-24 h-24 rounded-lg lg:w-40 lg:h-32" alt="partners">
+                <img title="tbh book club" src="{{ asset('images/partners/tbhbookclub.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
+                <img title="money read" src="{{ asset('images/partners/moneyread.jpg') }}" class="w-24 h-24 rounded-lg lg:w-32 lg:h-32" alt="partners">
+            </span>
+            <span class="flex space-x-8">
+                <img title="IdealHub Africa" src="{{ asset('images/partners/idealhub.jpg') }}" class="w-24 h-24 rounded-lg lg:w-40 lg:h-32" alt="partners">
             </span>
         </div>
     </div>

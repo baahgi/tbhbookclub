@@ -20,6 +20,11 @@
         in schools. This is to supplement the Ghanaian education curriculum and prepare the youth for life.
     </p>
 </div>
+
+<div class="mt-10">
+    <img class="w-full rounded" src="{{ asset('images/banners/img_16.jpg') }}" alt="image">
+</div>
+
 <div class="lg:flex lg:space-x-3">
     <div class="p-6 mt-8 rounded-lg shadow bg-gray-1">
         <h4 class="">Vision</h4> <hr class="border-brown-1">

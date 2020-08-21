@@ -18,11 +18,16 @@
     </div>
 </div>
 
+<div class="mt-10">
+    <img class="w-full rounded" src="{{ asset('images/banners/img_16.jpg') }}" alt="image">
+</div>
 <div class="mt-8 mb-4">
     <h4 class="mb-2 text-white">Participating Schools and Communities</h4>
-    <div class="grid grid-cols-2 gap-2 lg:grid-cols-3">
-        <img class="w-full" src="images/best_selling_books.jpg" alt="big-image">
-        <img class="w-full" src="images/best_selling_books.jpg" alt="big-image">
+    <div class="grid grid-cols-2 gap-2 lg:grid-cols-2">
+        <img class="w-full" src="{{ asset('images/banners/img_08.jpeg') }}" alt="image">
+        <img class="w-full" src="{{ asset('images/banners/img_11.jpeg') }}" alt="image">
+        <img class="w-full" src="{{ asset('images/banners/img_12.jpeg') }}" alt="image">
+        <img class="w-full" src="{{ asset('images/banners/img_04.jpeg') }}" alt="image">
     </div>
 </div>
 

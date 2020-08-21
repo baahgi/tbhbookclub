@@ -16,4 +16,9 @@
 </div>
 
 
+<div class="mt-10">
+    <img class="w-full rounded" src="{{ asset('images/banners/img_21.jpg') }}" alt="image">
+</div>
+
+
 @endsection

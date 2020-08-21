@@ -18,8 +18,7 @@
 <div class="mt-8 mb-4">
     <h4 class="mb-2 text-white">Some of our Reading Sessions</h4>
     <div class="grid grid-cols-2 gap-2 lg:grid-cols-3">
-        <img class="w-full" src="images/best_selling_books.jpg" alt="big-image">
-        <img class="w-full" src="images/best_selling_books.jpg" alt="big-image">
+        {{-- <img class="w-full" src="images/best_selling_books.jpg" alt="big-image"> --}}
     </div>
 </div>
 @endsection

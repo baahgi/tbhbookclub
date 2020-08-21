@@ -23,7 +23,7 @@
                 Operations Director - Abigail Appiah
             </li>
             <li>
-                Project Coordinator - Dawuda Asada Sofo
+                Project Coordinator - Dawuda Aseda Sofo
             </li>
         </ul>
     </div>

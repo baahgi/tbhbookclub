@@ -77,7 +77,7 @@
                                 <a href="{{ route('pages.projects') }}" class="px-1 text-sm tracking-wide whitespace-no-wrap {{ Request::is('projects') ? 'active' : '' }}">PROJECTS</a>
                             </li>
                             <li>
-                                <a href="{{ route('pages.team') }}" class="px-1 text-sm tracking-wide whitespace-no-wrap {{ Request::is('teams') ? 'active' : '' }}">TEAM</a>
+                                <a href="{{ route('pages.team') }}" class="px-1 text-sm tracking-wide whitespace-no-wrap {{ Request::is('teams') ? 'active' : '' }}">OUR TEAM</a>
                             </li>
                             <li>
                                 <a href="{{ route('pages.events.gallary') }}" class="px-1 text-sm tracking-wide whitespace-no-wrap {{ Request::is('events-and-gallery') ? 'active' : '' }}">EVENTS & GALLERY</a>
@@ -251,7 +251,7 @@
                     <li><a href="{{ route('pages.about') }}" class="p-1 tracking-wide whitespace-no-wrap {{ Request::is('about') ? 'active' : '' }}">ABOUT US</a></li>
                     <li><a href="{{ route('pages.contact') }}" class="p-1 tracking-wide whitespace-no-wrap {{ Request::is('contact') ? 'active' : '' }}">CONTACT US</a></li>
                     <li><a href="{{ route('pages.projects') }}" class="p-1 tracking-wide whitespace-no-wrap {{ Request::is('projects') ? 'active' : '' }}">PROJECTS</a></li>
-                    <li><a href="{{ route('pages.team') }}" class="p-1 tracking-wide whitespace-no-wrap {{ Request::is('teams') ? 'active' : '' }}">TEAMS</a></li>
+                    <li><a href="{{ route('pages.team') }}" class="p-1 tracking-wide whitespace-no-wrap {{ Request::is('teams') ? 'active' : '' }}">OUR TEAMS</a></li>
                     <li><a href="{{ route('pages.events.gallary') }}" class="p-1 tracking-wide whitespace-no-wrap {{ Request::is('events-and-gallery') ? 'active' : '' }}">EVENTS & GALLERY</a></li>
                     <li><a href="{{ route('pages.careers') }}" class="p-1 tracking-wide whitespace-no-wrap {{ Request::is('careers') ? 'active' : '' }}">CAREERS</a></li>
                     <li><a href="{{ route('pages.clubs') }}" class="p-1 tracking-wide whitespace-no-wrap {{ Request::is('clubs') ? 'active' : '' }}">CLUBS</a></li>

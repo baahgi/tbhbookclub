@@ -14,20 +14,23 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="w-full carousel-item active">
-                        <img src="images/BH WEB BANNER.jpg" class="block w-full" alt="Image">
+                        <img src="images/banners/img_10.jpg" class="block w-full" alt="Image">
                         <div class="carousel-caption bg-gray-1">
                             <h2 class="text-sm md:text-base lg:text-lg text-brown-3">We are raising the next generation of change makers</h2>
                             <a href="{{ route('member.register') }}" role="button" class="mt-2 text-sm font-medium btn-teal ">Join Us</a>
                         </div>
                     </div>
                     <div class="w-full carousel-item">
-                        <img src="images/Books_make_perfect_gift.jpeg" class="block w-full" alt="Image">
+                        <img src="{{ asset('images/banners/img_13.jpg') }}" class="block w-full" alt="Image">
                     </div>
                     <div class="w-full carousel-item">
-                        <img src="images/Books_make_perfect_gift.jpeg" class="block w-full" alt="Image">
+                        <img src="{{ asset('images/banners/img_14.jpg') }}" class="block w-full" alt="Image">
                     </div>
                     <div class="w-full carousel-item">
-                        <img src="images/best_selling_books.jpg" class="block w-full" alt="Image">
+                        <img src="{{ asset('images/banners/img_15.jpg') }}" class="block w-full" alt="Image">
+                    </div>
+                    <div class="w-full carousel-item">
+                        <img src="{{ asset('images/banners/img_21.jpg') }}" class="block w-full" alt="Image">
                     </div>
                 </div>
 
@@ -59,11 +62,11 @@
         @include('layouts.components.programs.list')
 
         <div class="mt-8 lg:space-x-4 lg:flex">
-            <div>
-                <img src="images/secure_login.png" alt="Advertisement">
+            <div class="flex justify-center">
+                <img src="{{ asset('images/banners/img_07.jpeg') }}" class="" width="580" height="700" alt="Advertisement">
             </div>
             <div class="mt-1 md:mt-4 lg:mt-0">
-                <img class="" src="images/best_selling_books.jpg" alt="">
+                <img class="" src="{{ asset('images/banners/img_21.jpg') }}" alt="">
                 <p class="text-xs leading-tight text-gray-1 md:text-sm">
                     <span class="font-bold text-white">Message:</span>  Join our monthly book reading and discussion.
                     Guess the Book we are Reading? <span class="font-bold text-white">#UntilEveryoneReads #JoinUs</span>
@@ -75,8 +78,8 @@
 
 
         <div class="mt-8 md:mx-1 md:flex md:space-x-4">
-            <div>
-                <img src="images/secure_login.png" alt="Advertisement">
+            <div class="">
+                <img src="images/banners/img_19.jpg" alt="Advertisement">
             </div>
             <div class="px-4 py-2 mt-1 rounded shadow-lg bg-gray-1 md:rounded-none md:mt-0">
                 <p class="mt-4 leading-relaxed text-gray-800 lg:text-xl lg:py-6">
@@ -93,12 +96,12 @@
         </div>
 
         <div class="mt-8"> <!--big banner-->
-            <img class="w-full" src="images/best_selling_books.jpg" alt="">
+            <img class="w-full" src="{{ asset('images/banners/img_18.jpg') }}" alt="">
         </div>
 
         <div class="mt-8 lg:flex lg:space-x-4 lg:mx-1">
             <div class="lg:flex-1">
-                <img class="" src="images/best_selling_books.jpg" alt="">
+                <img class="" src="{{ asset('images/banners/img_17.jpg') }}" alt="">
             </div>
             <div class="flex flex-col px-4 py-2 mt-2 space-y-2 bg-white lg:rounded-full lg:justify-center lg:space-y-6 lg:mt-0">
                 <p class="text-2xl font-medium text-center text-gray-600">
@@ -113,8 +116,8 @@
             </div>
         </div>
 
-        <div class="mt-8">
-            <img class="w-full" src="images/best_selling_books.jpg" alt="big-image">
+        <div class="mt-10">
+            <img class="w-full" src="{{ asset('images/banners/img_20.jpg') }}" alt="big-image">
         </div>
 
 
